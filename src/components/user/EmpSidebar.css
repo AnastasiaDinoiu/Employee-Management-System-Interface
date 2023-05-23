@@ -1,0 +1,146 @@
+.main-sidebar {
+    background-color: #294E95 !important;
+    /*max-height: 100%;*/
+    height: 100vh;
+    position: relative;
+    color: white;
+    max-width: 270px;
+    min-width: 270px;
+    transition: 1s;
+}
+
+.closed-main-sidebar {
+    background-color: #294E95 !important;
+    max-width: 80px;
+    min-width: 80px;
+    transition: 1s;
+}
+
+.menu-text {
+    display: block;
+}
+
+.menu-text-minimized {
+    display: none;
+}
+
+.sideBar-minimized .menu-text {
+    display: none;
+}
+
+.sideBar-minimized .menu-text-minimized {
+    display: block;
+    margin-left: 10px;
+}
+
+.sidebar-header {
+    border-bottom: 1px solid #485A6C;
+    height: 75px;
+}
+
+.sidebar-menu {
+    padding-top: 30px;
+}
+
+.sidebar-menu-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+    max-height: 54px;
+}
+
+.sidebar-toggle {
+    background-color: #294E95;
+    border: #294E95;
+    color: white;
+}
+
+.sidebar-header-name {
+    display: flex;
+    position: relative;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.sidebar-header-icon {
+    display: flex;
+    position: absolute;
+    left: 215px;
+    top: 23px;
+    transition: 1.5s;
+}
+
+.closed-sidebar-header-icon {
+    display: flex;
+    position: absolute;
+    left: 24px;
+    top: 23px;
+    transition: 0.5s;
+}
+
+.text-item {
+    text-decoration: none !important;
+    color: white;
+    transition: 0.5s;
+}
+
+.text-item:hover {
+    text-decoration: none !important;
+    color: #b6cce2;
+    transition: 0.5s;
+}
+
+.sidebar-menu-icon {
+    font-size: 18px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+.sub-menu-item {
+    list-style-type: none;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-decoration: none;
+    max-height: 54px;
+    min-height: 54px;
+}
+
+@keyframes showSpan {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    20% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.show-span {
+    animation-name: showSpan;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.submenu-icon {
+    margin-left: 20px;
+}
+
+.active-item {
+    background-color: #3565c0;
+    margin-left: -35px;
+    padding-left: 38px;
+}
